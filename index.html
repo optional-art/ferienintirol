@@ -244,33 +244,36 @@
         Send your inquiry easily via the form below.
       </p>
 
-      <form action="https://formspree.io/f/mqpkqojn" method="POST">
-        <!-- Optional: language hint -->
-        <input type="hidden" name="source" value="ferienintirol.at sales page">
+     <form action="https://formspree.io/f/mqpkqojn" method="POST">
+  <!-- Weiterleitung nach erfolgreichem Versand -->
+  <input type="hidden" name="_redirect" value="https://optional-art.github.io/ferienintirol/success.html">
 
-        <div>
-          <label for="name">Name / Your name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
+  <input type="hidden" name="source" value="ferienintirol.at sales page">
 
-        <div>
-          <label for="email">E-Mail / Email address</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+  <div>
+    <label for="name">Name / Your name</label>
+    <input type="text" id="name" name="name" required>
+  </div>
 
-        <div>
-          <label for="message">Nachricht / Message</label>
-          <textarea id="message" name="message" required
-            placeholder="Bitte geben Sie Ihr Angebot oder Ihre Fragen ein. / Please enter your offer or questions."></textarea>
-        </div>
+  <div>
+    <label for="email">E-Mail / Email address</label>
+    <input type="email" id="email" name="email" required>
+  </div>
 
-        <p class="form-note">
-          Mit dem Absenden erklären Sie sich damit einverstanden, dass Ihre Angaben zur Kontaktaufnahme verwendet werden.  
-          By submitting, you agree that your data will be used to contact you regarding this domain.
-        </p>
+  <div>
+    <label for="message">Nachricht / Message</label>
+    <textarea id="message" name="message" required
+      placeholder="Bitte geben Sie Ihr Angebot oder Ihre Fragen ein. / Please enter your offer or questions."></textarea>
+  </div>
 
-        <button type="submit">Anfrage senden / Send inquiry</button>
-      </form>
+  <p class="form-note">
+    Mit dem Absenden erklären Sie sich damit einverstanden, dass Ihre Angaben zur Kontaktaufnahme verwendet werden.  
+    By submitting, you agree that your data will be used to contact you regarding this domain.
+  </p>
+
+  <button type="submit">Anfrage senden / Send inquiry</button>
+</form>
+
     </section>
   </div>
 </div>
