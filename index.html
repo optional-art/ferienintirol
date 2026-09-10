@@ -257,71 +257,71 @@
       </p>
 
     <form id="contact-form">
-2
+
  
-3
+
 <input type="hidden"
-4
+
 name="source"
-5
+
 value="ferienintirol.at sales page">
-6
+
  
-7
+
 <div>
-8
+
 <label for="name">Name / Your name</label>
-9
+
 <input type="text" id="name" name="name" required>
-10
+
 </div>
-11
+
  
-12
+
 <div>
-13
+
 <label for="email">E-Mail / Email address</label>
-14
+
 <input type="email" id="email" name="email" required>
-15
+
 </div>
-16
+
  
-17
+
 <div>
-18
+
 <label for="message">Nachricht / Message</label>
-19
+
 <textarea id="message"
-20
+
 name="message"
-21
+
 required
-22
+
 placeholder="Bitte geben Sie Ihr Angebot oder Ihre Fragen ein. / Please enter your offer or questions."></textarea>
-23
+
 </div>
-24
+
  
-25
+
 <p class="form-note">
-26
+
 Mit dem Absenden erklären Sie sich damit einverstanden, dass Ihre Angaben zur Kontaktaufnahme verwendet werden.
-27
+
 By submitting, you agree that your data will be used to contact you regarding this domain.
-28
+
 </p>
-29
+
  
-30
+
 <button type="submit">
-31
+
 Anfrage senden / Send inquiry
-32
+
 </button>
-33
+
  
-34
+
 </form>
 
     </section>
@@ -332,67 +332,67 @@ Anfrage senden / Send inquiry
   Verkaufsseite / Sales page for the domain ferienintirol.at
 </footer>
 <script>
-2
+
 document.getElementById('contact-form').addEventListener('submit', async function(e) {
-3
+
  
-4
+
 e.preventDefault();
-5
+
  
-6
+
 const form = e.target;
-7
+
  
-8
+
 try {
-9
+
  
-10
+
 const response = await fetch(
-11
+
 'https://formspree.io/f/mqpkqojn',
-12
+
 {
-13
+
 method: 'POST',
-14
+
 body: new FormData(form),
-15
+
 headers: {
-16
+
 'Accept': 'application/json'
-17
+
 }
-18
+
 }
-19
+
 );
-20
+
  
-21
+
 if (response.ok) {
-22
+
 window.location.href = 'success.html';
-23
+
 } else {
-24
+
 alert('Beim Versand ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
-25
+
 }
-26
+
  
-27
+
 } catch (error) {
-28
+
 alert('Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.');
-29
+
 }
-30
+
  
-31
+
 });
-32
+
 </script>
 </body>
 </html>
