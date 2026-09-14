@@ -4,15 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
  
-<title>Anfrage erfolgreich versendet | ferienintirol.at</title>
-<meta name="robots" content="noindex,follow">
+<title>Anfrage erhalten | ferienintirol.at</title>
+ 
+<meta name="description" content="Ihre Anfrage zu ferienintirol.at wurde erfolgreich übermittelt. Vielen Dank für Ihr Interesse an dieser Premium-Domain.">
+ 
+<link rel="icon" href="favicon.ico" type="image/x-icon">
  
 <style>
-:root {
---primary: #1b4b7a;
---accent: #e67e22;
---bg: #f2f6f9;
---card: #ffffff;
+:root{
+--primary:#1b4b7a;
+--primary-dark:#0f2f4f;
+--accent:#e67e22;
+--bg:#f2f6f9;
+--card:#ffffff;
+--success:#28a745;
 }
  
 *{
@@ -21,46 +26,57 @@ box-sizing:border-box;
  
 body{
 margin:0;
-font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
-background:#f2f6f9;
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+background:var(--bg);
 color:#333;
 }
  
 header{
-background: linear-gradient(135deg, #0f2f4f, #1b4b7a);
-color: #fff;
-padding:35px 20px;
+background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+color:white;
 text-align:center;
+padding:50px 20px;
 }
  
 header h1{
 margin:0;
-font-size:2.2rem;
+font-size:2.4rem;
 }
  
 header p{
 margin-top:10px;
-opacity:.9;
+opacity:0.9;
 }
  
 .container{
 max-width:900px;
-margin:40px auto;
-padding:20px;
+margin:-30px auto 40px;
+padding:0 20px;
 }
  
 .card{
 background:var(--card);
-border-radius:14px;
+border-radius:16px;
 padding:40px;
-box-shadow:0 8px 30px rgba(0,0,0,.20);
-text-align:center;
-animation:fadeIn .7s ease;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
 }
  
-.success-icon{
-font-size:72px;
-margin-bottom:15px;
+.success-circle{
+width:100px;
+height:100px;
+margin:0 auto 25px;
+border-radius:50%;
+background:rgba(40,167,69,.12);
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--success);
+font-size:3rem;
+font-weight:bold;
+}
+ 
+.center{
+text-align:center;
 }
  
 h2{
@@ -68,112 +84,154 @@ color:var(--primary);
 margin-top:0;
 }
  
-.message{
-font-size:1.1rem;
-line-height:1.7;
-}
- 
-.separator{
-margin:35px auto;
-width:120px;
-height:2px;
-background:#d9e3ec;
-}
- 
-.notice{
-background:#f8fafc;
-border-left:4px solid var(--accent);
+.info-box{
+background:#fff7e6;
+border-left:5px solid var(--accent);
 padding:18px;
-margin-top:25px;
 border-radius:8px;
-text-align:left;
+margin:30px 0;
+}
+ 
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:18px;
+margin-top:25px;
+}
+ 
+.step{
+background:#f8fbfd;
+border-radius:10px;
+padding:18px;
+text-align:center;
+}
+ 
+.step-number{
+width:38px;
+height:38px;
+margin:0 auto 10px;
+border-radius:50%;
+background:var(--primary);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
 }
  
 .button{
 display:inline-block;
-margin-top:30px;
-background:var(--primary);
-color:#fff;
-text-decoration:none;
-padding:14px 24px;
+padding:14px 28px;
 border-radius:999px;
+text-decoration:none;
 font-weight:600;
-transition:.2s;
+margin-top:25px;
+background:var(--primary);
+color:white;
+transition:0.2s;
 }
  
 .button:hover{
-background:#14395c;
+background:var(--primary-dark);
 }
  
-footer{
+.footer{
 text-align:center;
+color:#777;
+font-size:0.85rem;
 padding:25px;
-color:#666;
-font-size:.9rem;
 }
  
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(10px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+.lang-divider{
+margin:40px 0;
+border:none;
+border-top:1px solid #e3e8ec;
 }
 </style>
- 
 </head>
+ 
 <body>
-
+ 
 <header>
 <h1>ferienintirol.at</h1>
-<p>Premium-Domain für Urlaub in Tirol · Premium domain for holidays in Tyrol</p>
+<p>Premium-Domain für Urlaub, Ferienwohnungen und Tourismus in Tirol</p>
 </header>
  
 <div class="container">
+ 
 <div class="card">
  
-<div class="success-icon">✅</div>
+<div class="success-circle">✓</div>
  
-<h2>Vielen Dank für Ihre Anfrage</h2>
+<div class="center">
+<h2>Vielen Dank für Ihre Anfrage!</h2>
  
-<p class="message">
-Ihre Nachricht wurde erfolgreich übermittelt.<br>
-Wir werden Ihre Anfrage so schnell wie möglich bearbeiten und uns bei Ihnen melden.
+<p>
+Ihre Nachricht wurde erfolgreich übermittelt.
+Wir freuen uns über Ihr Interesse an der Premium-Domain
+<strong>ferienintirol.at</strong>.
 </p>
- 
-<div class="separator"></div>
- 
-<h2>Thank You for Your Inquiry</h2>
- 
-<p class="message">
-Your message has been successfully delivered.<br>
-We will review your request and get back to you as soon as possible.
-</p>
- 
-<div class="notice">
-<strong>Hinweis / Note</strong><br><br>
- 
-Bitte prüfen Sie gegebenenfalls auch Ihren Spam-Ordner.
-Antworten erfolgen in der Regel zeitnah.<br><br>
- 
-Please also check your spam folder if necessary.
-Replies are usually sent promptly.
 </div>
-
-  
-<a href="https://www.ferienintirol.at" class="button">
-Zurück zur Verkaufsseite / Back to Sales Page
+ 
+<div class="info-box">
+<strong>Ihre Anfrage ist bei uns eingetroffen.</strong><br><br>
+Wir prüfen Ihre Nachricht persönlich und melden uns schnellstmöglich
+mit weiteren Informationen oder einer Antwort auf Ihr Angebot.
+</div>
+ 
+<div class="steps">
+ 
+<div class="step">
+<div class="step-number">1</div>
+<strong>Anfrage erhalten</strong><br>
+Ihre Nachricht wurde erfolgreich gespeichert.
+</div>
+ 
+<div class="step">
+<div class="step-number">2</div>
+<strong>Prüfung</strong><br>
+Angebot und Fragen werden geprüft.
+</div>
+ 
+<div class="step">
+<div class="step-number">3</div>
+<strong>Rückmeldung</strong><br>
+Wir antworten in der Regel innerhalb von 24 Stunden.
+</div>
+ 
+</div>
+ 
+<div class="center">
+index.html
+Zur Verkaufsseite
 </a>
- 
-</div>
 </div>
  
-<footer>
-Premium-Domain ferienintirol.at · Verkaufsseite / Sales Page
-</footer>
+<hr class="lang-divider">
+ 
+<div class="center">
+ 
+<h2>Thank you for your inquiry!</h2>
+ 
+<p>
+Your message has been successfully submitted.
+We appreciate your interest in the premium domain
+<strong>ferienintirol.at</strong>.
+</p>
+ 
+<p>
+We will review your inquiry and get back to you as soon as possible.
+</p>
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<div class="footer">
+© ferienintirol.at • Premium Domain For Sale
+</div>
  
 </body>
 </html>
