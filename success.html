@@ -1,141 +1,239 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Nachricht gesendet / Message sent – weltraumtrips.com</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-    :root {
-      --primary: #2b4eff;
-      --bg: #0b0f1a;
-      --card-bg: #141a29;
-      --accent: #4f7cff;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-      background: var(--bg);
-      color: #ffffff;
-      margin: 0;
-      opacity: 0;
-      animation: fadeIn 0.8s ease forwards;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    header {
-      background: linear-gradient(135deg, #1a1f33, #0b0f1a);
-      color: #fff;
-      text-align: center;
-      padding: 40px 15px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
-      letter-spacing: 0.03em;
-    }
-
-    header p {
-      margin: 8px 0 0;
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background: var(--card-bg);
-      padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 6px 24px rgba(0,0,0,0.25);
-      text-align: center;
-    }
-
-    .icon {
-      font-size: 3.8rem;
-      color: var(--primary);
-      margin-bottom: 15px;
-    }
-
-    h2 {
-      color: var(--accent);
-      margin-top: 0;
-      font-size: 1.7rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin: 10px 0 20px;
-    }
-
-    hr {
-      margin: 35px 0;
-      border: none;
-      border-top: 1px solid #2b4eff;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 20px;
-      background: var(--primary);
-      color: #fff;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.15s ease, transform 0.15s ease;
-    }
-
-    a.button:hover {
-      background: #1f3bcc;
-      transform: translateY(-2px);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #aaa;
-      padding: 20px 10px 30px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<title>Anfrage erhalten | weltraumtrips.com</title>
+ 
+<meta name="description" content="Ihre Anfrage zu weltraumtrips.com wurde erfolgreich übermittelt. Vielen Dank für Ihr Interesse an dieser Premium-Domain.">
+ 
+<meta name="robots" content="noindex,follow">
+ 
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+ 
+<style>
+:root{
+--primary:#1b4b7a;
+--primary-dark:#0f2f4f;
+--accent:#e67e22;
+--bg:#f2f6f9;
+--card:#ffffff;
+--success:#28a745;
+}
+ 
+*{
+box-sizing:border-box;
+}
+ 
+body{
+margin:0;
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+background:var(--bg);
+color:#333;
+}
+ 
+header{
+background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+ 
+header h1{
+margin:0;
+font-size:2.4rem;
+}
+ 
+header p{
+margin-top:10px;
+opacity:0.9;
+}
+ 
+.container{
+max-width:900px;
+margin:-30px auto 40px;
+padding:0 20px;
+}
+ 
+.card{
+background:var(--card);
+border-radius:16px;
+padding:40px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+ 
+.success-circle{
+width:100px;
+height:100px;
+margin:0 auto 25px;
+border-radius:50%;
+background:rgba(40,167,69,.12);
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--success);
+font-size:3rem;
+font-weight:bold;
+}
+ 
+.center{
+text-align:center;
+}
+ 
+h2{
+color:var(--primary);
+margin-top:0;
+}
+ 
+.info-box{
+background:#fff7e6;
+border-left:5px solid var(--accent);
+padding:18px;
+border-radius:8px;
+margin:30px 0;
+}
+ 
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:18px;
+margin-top:25px;
+}
+ 
+.step{
+background:#f8fbfd;
+border-radius:10px;
+padding:18px;
+text-align:center;
+}
+ 
+.step-number{
+width:38px;
+height:38px;
+margin:0 auto 10px;
+border-radius:50%;
+background:var(--primary);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}
+ 
+.button{
+display:inline-block;
+padding:14px 28px;
+border-radius:999px;
+text-decoration:none;
+font-weight:600;
+margin-top:25px;
+background:var(--primary);
+color:white;
+transition:0.2s;
+}
+ 
+.button:hover{
+background:var(--primary-dark);
+}
+ 
+.footer{
+text-align:center;
+color:#777;
+font-size:0.85rem;
+padding:25px;
+}
+ 
+.lang-divider{
+margin:40px 0;
+border:none;
+border-top:1px solid #e3e8ec;
+}
+</style>
 </head>
-
+ 
 <body>
-
+ 
 <header>
-  <h1>weltraumtrips.com</h1>
-  <p>Premium-Domain – Kontaktbestätigung / Contact confirmation</p>
+<h1>weltraumtrips.com</h1>
+<p>Premium-Domain für Raumfahrt, Space Tourism und Zukunftstechnologien</p>
 </header>
-
-<main>
-  <div class="icon">✔️</div>
-
-  <h2>Nachricht erfolgreich gesendet</h2>
-  <p>
-    Vielen Dank für Ihre Anfrage!<br>
-    Ich werde mich so bald wie möglich bei Ihnen melden.
-  </p>
-
-  <hr>
-
-  <h2>Message successfully sent</h2>
-  <p>
-    Thank you for your inquiry!<br>
-    I will get back to you as soon as possible.
-  </p>
-
-  <a href="index.html" class="button">Zurück zur Hauptseite / Back to main page</a>
-</main>
-
-<footer>
-  Verkaufsseite / Sales page for the domain weltraumtrips.com
-</footer>
-
+ 
+<div class="container">
+ 
+<div class="card">
+ 
+<div class="success-circle">✓</div>
+ 
+<div class="center">
+<h2>Vielen Dank für Ihre Anfrage!</h2>
+ 
+<p>
+Ihre Nachricht wurde erfolgreich übermittelt.
+Wir freuen uns über Ihr Interesse an der Premium-Domain
+<strong>weltraumtrips.com</strong>.
+</p>
+</div>
+ 
+<div class="info-box">
+<strong>Ihre Anfrage ist bei uns eingetroffen.</strong><br><br>
+Wir prüfen Ihre Nachricht persönlich und melden uns schnellstmöglich
+mit weiteren Informationen oder einer Antwort auf Ihr Angebot.
+</div>
+ 
+<div class="steps">
+ 
+<div class="step">
+<div class="step-number">1</div>
+<strong>Anfrage erhalten</strong><br>
+Ihre Nachricht wurde erfolgreich gespeichert.
+</div>
+ 
+<div class="step">
+<div class="step-number">2</div>
+<strong>Prüfung</strong><br>
+Angebot und Fragen werden geprüft.
+</div>
+ 
+<div class="step">
+<div class="step-number">3</div>
+<strong>Rückmeldung</strong><br>
+Wir antworten in der Regel innerhalb von 24 Stunden.
+</div>
+ 
+</div>
+ 
+<div class="center">
+<a href="index.html" class="button">
+Zur Verkaufsseite
+</a>
+</div>
+ 
+<hr class="lang-divider">
+ 
+<div class="center">
+ 
+<h2>Thank you for your inquiry!</h2>
+ 
+<p>
+Your message has been successfully submitted.
+We appreciate your interest in the premium domain
+<strong>weltraumtrips.com</strong>.
+</p>
+ 
+<p>
+We will review your inquiry and get back to you as soon as possible.
+</p>
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<div class="footer">
+© weltraumtrips.com • Premium Domain For Sale
+</div>
+ 
 </body>
 </html>
