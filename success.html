@@ -198,7 +198,7 @@
     </section>
 
    <!-- RIGHT: Success message -->
-<section class="card">
+<section class="card" id="success">
 <div class="lang-label">Erfolgreich gesendet</div>
 
 <h2>Vielen Dank für Ihre Anfrage!</h2>
@@ -282,5 +282,15 @@ transition:background 0.3s ease;">
   Verkaufsseite / Sales page for the domain ferienintirol.at
 </footer>
 
+<script>
+if (window.innerWidth <= 900) {
+window.addEventListener('load', function () {
+document.getElementById('success').scrollIntoView({
+behavior: 'smooth'
+});
+});
+}
+</script>
+  
 </body>
 </html>
